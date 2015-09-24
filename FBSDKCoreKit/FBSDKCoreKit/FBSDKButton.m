@@ -370,7 +370,7 @@
 
   UILabel *titleLabel = self.titleLabel;
   titleLabel.lineBreakMode = NSLineBreakByClipping;
-  UIFont *font = [UIFont boldSystemFontOfSize:14.0];
+  UIFont *font = [UIFont boldSystemFontOfSize:9.0];
   titleLabel.font = font;
 
   CGSize imageSize = CGSizeMake(font.pointSize, font.pointSize);

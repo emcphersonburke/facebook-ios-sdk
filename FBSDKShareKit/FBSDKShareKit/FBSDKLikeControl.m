@@ -253,7 +253,7 @@ typedef CGSize (^fbsdk_like_control_sizing_block_t)(UIView *subview, CGSize cons
 
   CGRect bounds = self.bounds;
   CGSize(^sizingBlock)(UIView *, CGSize) = ^CGSize(UIView *subview, CGSize constrainedSize) {
-    return [subview sizeThatFits:constrainedSize];
+      return CGSizeMake(45, 17);//return [subview sizeThatFits:constrainedSize];
   };
   FBSDKLikeControlLayout layout = [self _layoutWithBounds:bounds subviewSizingBlock:sizingBlock];
 
